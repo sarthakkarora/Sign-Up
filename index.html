@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Content</title>
+    <link rel="stylesheet" href="style.css"> 
+    
+</head>
+<body>
+  <div class="video-background">
+      <video autoplay muted loop>
+          <source src="11354070-uhd_3840_2160_60fps.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+  </div>
+    <div class="signup-container">
+        <div class="signup-content-container">
+            <div>
+                <span class="signup-content"></span>
+            </div>
+            <div class="step" id="step-1">
+                <h2>Enter your email<sup aria-hidden="true">*</sup></h2>
+                <div class="input-container">
+                    <span class="arrow"></span>
+                <input type="text" id="email"><button onclick="nextStep(1)">Continue</button>
+                
+                
+                </div>
+
+            <div class="step hidden" id="step-2">
+                <h2>Enter your username<sup aria-hidden="true">*</sup></h2>
+                <div class="input-container">
+                    <span class="arrow"></span>
+                <input type="text" id="username" oninput="changeToBlue(event)">     <button onclick="nextStep(2)">Continue</button>
+               
+                </div>
+           
+            </div>
+
+            <div class="step hidden" id="step-3">
+                <h2>Enter your message<sup aria-hidden="true">*</sup></h2>
+                <div class="input-container">
+                    <span class="arrow"></span>
+                <textarea id="message" oninput="changeToBlue(event)" ></textarea>     <button id="submitButton" onclick="submitForm()">Submit</button>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
